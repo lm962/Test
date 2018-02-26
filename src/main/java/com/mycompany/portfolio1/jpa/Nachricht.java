@@ -36,24 +36,24 @@ public class Nachricht implements Serializable {
         this.id = id;
     }
     //**************************
-    public String getVonBenutzer() {
+    public Benutzer getVonBenutzer() {
         return vonBenutzer;
     }
-    public void setVonBenutzer(String vonBenutzer) {
+    public void setVonBenutzer(Benutzer vonBenutzer) {
         this.vonBenutzer = vonBenutzer;
     }
     //**************************
-    public String getAnBenutzer() {
+    public Benutzer getAnBenutzer() {
         return anBenutzer;
     }
-    public void getAnBenutzer(String anBenutzer) {
+    public void getAnBenutzer(Benutzer anBenutzer) {
         this.anBenutzer = anBenutzer;
     }
     //**************************
-    public String getZuArtikel() {
+    public Anzeige getZuArtikel() {
         return zuArtikel;
     }
-    public void setZuArtikel(String zuArtikel) {
+    public void setZuArtikel(Anzeige zuArtikel) {
         this.zuArtikel = zuArtikel;
     }
     //**************************
