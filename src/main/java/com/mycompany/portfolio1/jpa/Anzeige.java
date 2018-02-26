@@ -33,9 +33,23 @@ public class Anzeige implements Serializable {
     private String ort;
     
     //Konstruktor***************************************************************
-    public Anzeige()  {
-       
+    public Anzeige(Long id, boolean art, String titel, String beschreibung, Datum erstellungsdatum, Datum onlineBis, double preis, String artDesPreis,int plz, String ort) {
+        this.id=id;
+        this.art=art;
+        this.titel=titel;
+        this.beschreibung=beschreibung;
+        this.erstellungsdatum=erstellungsdatum;
+        this.onlineBis=onlineBis;
+        this.preis=preis;
+        this.artDesPreis=artDesPreis;
+        this.plz=plz;
+        this.ort=ort;
     }
+    
+    public Anzeige() {
+    }
+    
+    private Anzeige Artikel = new Anzeige();
     
 
     public Long getId() {
