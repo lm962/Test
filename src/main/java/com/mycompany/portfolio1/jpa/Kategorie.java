@@ -25,7 +25,8 @@ public class Kategorie implements Serializable {
     private Long slug;
     private String name;
    
-    public Kategorie(String name) {
+    public Kategorie(Long slug, String name) {
+        this.slug = slug;
         this.name = name;
     }
     
