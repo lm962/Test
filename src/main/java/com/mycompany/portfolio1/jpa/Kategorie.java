@@ -21,7 +21,7 @@ public class Kategorie implements Serializable {
     private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    //Variablen
+    //Variablen*****************************************************************
     private Long slug;
     private String name;
 
@@ -32,25 +32,22 @@ public class Kategorie implements Serializable {
         this.name = name;
     }
     
-    //Getter und Setter
+    //Getter und Setter*********************************************************
     public Long getSlug() {
         return slug;
     }
-
     public void setSlug(Long slug) {
         this.slug = slug;
     }
-    
-    
+    //*******************************
     public String getName() {
         return name;
     }
-
     public void setName(String name) {
         this.name = name;
     }
 
-    
+    //**************************************************************************
     @Override
     public int hashCode() {
         int hash = 0;
