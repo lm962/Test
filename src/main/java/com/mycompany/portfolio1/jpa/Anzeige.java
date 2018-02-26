@@ -49,7 +49,7 @@ public class Anzeige implements Serializable {
     public Anzeige() {
     }
     
-    private Anzeige Artikel = new Anzeige();
+    private Anzeige zuArtikel = new Anzeige();
     
 
     public Long getId() {
