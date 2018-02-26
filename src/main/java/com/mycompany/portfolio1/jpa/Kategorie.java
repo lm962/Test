@@ -21,20 +21,34 @@ public class Kategorie implements Serializable {
     private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
-
-    public Long getId() {
-        return id;
+    //Variablen
+    private Long slug;
+    private String name;
+    
+    
+    //Getter und Setter
+    public Long getSlug() {
+        return slug;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setSlug(Long slug) {
+        this.slug = slug;
+    }
+    
+    
+    public String getName() {
+        return name;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    
     @Override
     public int hashCode() {
         int hash = 0;
-        hash += (id != null ? id.hashCode() : 0);
+        hash += (slug != null ? slug.hashCode() : 0);
         return hash;
     }
 
@@ -45,7 +59,7 @@ public class Kategorie implements Serializable {
             return false;
         }
         Kategorie other = (Kategorie) object;
-        if ((this.id == null && other.id != null) || (this.id != null && !this.id.equals(other.id))) {
+        if ((this.slug == null && other.slug != null) || (this.slug != null && !this.slug.equals(other.slug))) {
             return false;
         }
         return true;
@@ -53,7 +67,7 @@ public class Kategorie implements Serializable {
 
     @Override
     public String toString() {
-        return "com.mycompany.portfolio1.jpa.Kategorie[ id=" + id + " ]";
+        return "com.mycompany.portfolio1.jpa.Kategorie[ slug=" + slug + " ]";
     }
     
 }
