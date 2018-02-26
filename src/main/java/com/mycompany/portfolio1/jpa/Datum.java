@@ -10,10 +10,12 @@ package com.mycompany.portfolio1.jpa;
  * @author MildL
  */
 public class Datum {
+    //Variablen initialisieren**************************************************
     public int jahr;
     public int monat;
     public int tag;
     
+    //Konstruktor***************************************************************
     public Datum (int jahr, int monat, int tag)  {
         this.jahr = jahr;
         this.monat = monat;
