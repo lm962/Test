@@ -24,10 +24,7 @@ public class Kategorie implements Serializable {
     //Variablen*****************************************************************
     private Long slug;
     private String name;
-
-    public Kategorie() {
-    }
-    
+   
     public Kategorie(String name) {
         this.name = name;
     }
