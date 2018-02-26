@@ -10,6 +10,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
 /**
  *
@@ -29,6 +30,9 @@ public class Kategorie implements Serializable {
         this.slug = slug;
         this.name = name;
     }
+
+    private Kategorie() {
+    }
     
     //Getter und Setter*********************************************************
     public Long getSlug() {
@@ -44,6 +48,9 @@ public class Kategorie implements Serializable {
     public void setName(String name) {
         this.name = name;
     }
+    
+    @ManyToOne
+    public Kategorie kategorie=new Kategorie();
 
     //**************************************************************************
     @Override
