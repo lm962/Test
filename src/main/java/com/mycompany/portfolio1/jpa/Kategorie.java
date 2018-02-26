@@ -24,7 +24,13 @@ public class Kategorie implements Serializable {
     //Variablen
     private Long slug;
     private String name;
+
+    public Kategorie() {
+    }
     
+    public Kategorie(String name) {
+        this.name = name;
+    }
     
     //Getter und Setter
     public Long getSlug() {
@@ -59,10 +65,7 @@ public class Kategorie implements Serializable {
             return false;
         }
         Kategorie other = (Kategorie) object;
-        if ((this.slug == null && other.slug != null) || (this.slug != null && !this.slug.equals(other.slug))) {
-            return false;
-        }
-        return true;
+        return !((this.slug == null && other.slug != null) || (this.slug != null && !this.slug.equals(other.slug)));
     }
 
     @Override
