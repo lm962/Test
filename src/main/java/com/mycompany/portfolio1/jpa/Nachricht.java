@@ -10,6 +10,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
 /**
  *
@@ -64,6 +65,11 @@ public class Nachricht implements Serializable {
         this.text = text;
     }
     //**************************
+    
+    //Fremdschlüssel
+    @ManyToOne
+    public Benutzer benutzer = new Benutzer();
+    
     
     @Override
     public int hashCode() {
