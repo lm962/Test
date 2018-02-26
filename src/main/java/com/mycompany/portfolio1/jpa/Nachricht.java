@@ -36,7 +36,7 @@ public class Nachricht implements Serializable {
         this.id = id;
     }
     //**************************
-    public Sting getVonBenutzer() {
+    public String getVonBenutzer() {
         return vonBenutzer;
     }
     public void setVonBenutzer(String vonBenutzer) {
