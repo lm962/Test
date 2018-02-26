@@ -13,50 +13,49 @@ import javax.persistence.Id;
 
 /**
  *
- * @author MildL
+ * @author Larissa
  */
 @Entity
-public class Kategorie implements Serializable {
+public class Foto implements Serializable {
 
     private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    //Variablen*****************************************************************
-    private Long slug;
-    private String name;
-    
-    
-    //Getter und Setter*********************************************************
-    public Long getSlug() {
-        return slug;
-    }
-    public void setSlug(Long slug) {
-        this.slug = slug;
-    }
-    //*******************************
-    public String getName() {
-        return name;
-    }
-    public void setName(String name) {
-        this.name = name;
-    }
+    //Variablen initialisieren**************************************************
+    private Long id;
+    private String bezeichnung;
 
+    //GET/SET-Methoden**********************************************************
+    public Long getId() {
+        return id;
+    }
+    public void setId(Long id) {
+        this.id = id;
+    }
+    //********************************
+    public String getBezeichnung() {
+        return bezeichnung;
+    }
+    public void setBezeichnung(String bezeichnung) {
+        this.bezeichnung = bezeichnung;
+    }
     //**************************************************************************
+    
     @Override
     public int hashCode() {
         int hash = 0;
-        hash += (slug != null ? slug.hashCode() : 0);
+        hash += (id != null ? id.hashCode() : 0);
         return hash;
     }
 
     @Override
     public boolean equals(Object object) {
         // TODO: Warning - this method won't work in the case the id fields are not set
-        if (!(object instanceof Kategorie)) {
+        if (!(object instanceof Foto)) {
             return false;
         }
-        Kategorie other = (Kategorie) object;
-        if ((this.slug == null && other.slug != null) || (this.slug != null && !this.slug.equals(other.slug))) {
+        Foto other = (Foto) object;
+        if ((this.id == null && other.id != null) || (this.id != null && !this.id.equals(other.id))) {
             return false;
         }
         return true;
@@ -64,7 +63,7 @@ public class Kategorie implements Serializable {
 
     @Override
     public String toString() {
-        return "com.mycompany.portfolio1.jpa.Kategorie[ slug=" + slug + " ]";
+        return "com.mycompany.portfolio1.jpa.Foto[ id=" + id + " ]";
     }
     
 }
