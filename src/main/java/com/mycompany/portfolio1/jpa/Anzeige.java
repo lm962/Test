@@ -123,10 +123,11 @@ public class Anzeige implements Serializable {
     public void setOrt(String ort) {
         this.ort = ort;
     }
-    //********************************
     
+    //Fremdschlüssel************************************************************
     @ManyToOne
     private Benutzer benutzer=new Benutzer();
+    //**************************************************************************
     
     @Override
     public int hashCode() {

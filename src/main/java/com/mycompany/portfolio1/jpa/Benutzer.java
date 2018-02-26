@@ -134,13 +134,12 @@ public class Benutzer implements Serializable {
     public void setTelefonnummer(int telefonnummer) {
         this.telefonnummer = telefonnummer;
     }
-    //*****************************
     
-    
-    //Fremdschlüssel
+    //Fremdschlüssel************************************************************
     @ManyToMany
     public Anzeige anzeige= new Anzeige();
-
+    //**************************************************************************
+    
     @Override
     public int hashCode() {
         int hash = 0;
