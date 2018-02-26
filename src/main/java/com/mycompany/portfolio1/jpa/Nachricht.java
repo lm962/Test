@@ -64,12 +64,11 @@ public class Nachricht implements Serializable {
     public void setText(String text) {
         this.text = text;
     }
-    //**************************
     
-    //Fremdschlüssel
+    //Fremdschlüssel***********************************************************
     @ManyToOne
     public Benutzer benutzer = new Benutzer();
-    
+    //*************************************************************************
     
     @Override
     public int hashCode() {

@@ -28,21 +28,21 @@ public class Benutzer implements Serializable {
     private String nachname;
     private String straße;
     private int hausnummer;
-    private int postleitzahl;
+    private int plz;
     private String ort;
     private String land;
     private String email;
     private int telefonnummer;
     
     //Konstruktor***************************************************************
-    public Benutzer(String benutzername, String passwort, String vorname, String nachname, String straße, int hausnummer, int postleitzahl, String ort, String land, String email)  {
+    public Benutzer(String benutzername, String passwort, String vorname, String nachname, String straße, int hausnummer, int plz, String ort, String land, String email)  {
        this.benutzername = benutzername;
        this.passwort = passwort;
        this.vorname = vorname;
        this.nachname = nachname;
        this.straße = straße;
        this.hausnummer = hausnummer;
-       this.postleitzahl = postleitzahl;
+       this.plz = plz;
        this.ort = ort;
        this.land = land;
        this.email = email;
@@ -98,11 +98,11 @@ public class Benutzer implements Serializable {
         this.hausnummer = hausnummer;
     }
     //*****************************
-    public int getPostleitzahl() {
-        return postleitzahl;
+    public int getPlz() {
+        return plz;
     }
-    public void setPostleitzahl(int postleitzahl) {
-        this.postleitzahl = postleitzahl;
+    public void setPlz(int plz) {
+        this.plz = plz;
     }
     //*****************************
     public String getOrt() {

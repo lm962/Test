@@ -21,6 +21,7 @@ public class Anzeige implements Serializable {
     private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    //Variablen initialisieren**************************************************
     private Long id;
     private boolean art;
     private String titel;
@@ -48,89 +49,80 @@ public class Anzeige implements Serializable {
     
     public Anzeige() {
     }
-    
+    //********************************************
     private Anzeige zuArtikel = new Anzeige();
     
-
+    //GET/SET-Methoden**********************************************************
     public Long getId() {
         return id;
     }
-
     public void setId(Long id) {
         this.id = id;
     }
-    
+     //********************************
     public boolean getArt() {
         return art;
     }
-
     public void setArt(boolean art) {
         this.art = art;
     }
-
+    //********************************
     public String getTitel() {
         return titel;
     }
-
     public void setTitel(String titel) {
         this.titel = titel;
     }
-    
+     //********************************
     public String getBeschreibung() {
         return beschreibung;
     }
-
     public void setBeschreibung(String beschreibung) {
         this.beschreibung = beschreibung;
     }
-    
+     //********************************
     public Datum getErstellungsdatum() {
         return erstellungsdatum;
     }
-
     public void setErstellungsdatum(Datum erstellungsdatum) {
         this.erstellungsdatum = erstellungsdatum;
     }
-    
+     //********************************
     public Datum getOnlineBis() {
         return onlineBis;
     }
-
     public void setOnlineBis(Datum onlineBis) {
         this.onlineBis = onlineBis;
     }
-    
+     //********************************
     public double getPreis() {
         return id;
     }
-
     public void setPreis(double preis) {
         this.preis = preis;
     }
-    
+     //********************************
     public String getArtDesPreis() {
         return artDesPreis;
     }
-
     public void setArtDesPreis(String artDesPreis) {
         this.artDesPreis = artDesPreis;
     }
-    
+     //********************************
     public int getPlz() {
         return plz;
     }
-
     public void setPlz(int plz) {
         this.plz = plz;
     }
-    
+    //********************************
     public String getOrt() {
         return ort;
     }
-
     public void setOrt(String ort) {
         this.ort = ort;
     }
+    //********************************
     
     @Override
     public int hashCode() {

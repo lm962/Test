@@ -41,10 +41,9 @@ public class Foto implements Serializable {
         this.bezeichnung = bezeichnung;
     }
     
-     //Fremdschlüssel
+     //Fremdschlüssel***********************************************************
     @ManyToOne
     public Anzeige anzeige= new Anzeige();
-    
     //**************************************************************************
     
     @Override
