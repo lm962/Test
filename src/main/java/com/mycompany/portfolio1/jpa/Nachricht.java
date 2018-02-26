@@ -44,7 +44,7 @@ public class Nachricht implements Serializable {
     }
     //**************************
     public String getAnBenutzer() {
-        return id;
+        return anBenutzer;
     }
     public void getAnBenutzer(String anBenutzer) {
         this.anBenutzer = anBenutzer;
