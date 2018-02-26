@@ -10,6 +10,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToMany;
+import javax.persistence.ManyToOne;
 
 /**
  *
@@ -134,6 +136,11 @@ public class Benutzer implements Serializable {
     }
     //*****************************
     
+    
+    //Fremdschlüssel
+    @ManyToMany
+    public Anzeige anzeige= new Anzeige();
+
     @Override
     public int hashCode() {
         int hash = 0;
