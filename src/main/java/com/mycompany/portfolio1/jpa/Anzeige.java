@@ -32,6 +32,11 @@ public class Anzeige implements Serializable {
     private int plz;
     private String ort;
     
+    //Konstruktor***************************************************************
+    public Anzeige()  {
+       
+    }
+    
 
     public Long getId() {
         return id;
