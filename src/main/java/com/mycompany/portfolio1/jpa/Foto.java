@@ -10,6 +10,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
 /**
  *
@@ -39,6 +40,11 @@ public class Foto implements Serializable {
     public void setBezeichnung(String bezeichnung) {
         this.bezeichnung = bezeichnung;
     }
+    
+     //Fremdschlüssel
+    @ManyToOne
+    public Anzeige anzeige= new Anzeige();
+    
     //**************************************************************************
     
     @Override
