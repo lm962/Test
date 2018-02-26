@@ -34,6 +34,27 @@ public class Benutzer implements Serializable {
     private String email;
     private int telefonnummer;
     
+    //Konstruktor***************************************************************
+    public Benutzer(String benutzername, String passwort, String vorname, String nachname, String straße, int hausnummer, int postleitzahl, String ort, String land, String email)  {
+       this.benutzername = benutzername;
+       this.passwort = passwort;
+       this.vorname = vorname;
+       this.nachname = nachname;
+       this.straße = straße;
+       this.hausnummer = hausnummer;
+       this.postleitzahl = postleitzahl;
+       this.ort = ort;
+       this.land = land;
+       this.email = email;
+       this.telefonnummer = telefonnummer;
+    }
+    public Benutzer() {
+        
+    }
+    //*******************************************
+    private Benutzer vonBenutzer = new Benutzer();
+    private Benutzer anBenutzer = new Benutzer();
+    
     //GET/SET-Methoden**********************************************************
     public String getBenutzername() {
         return benutzername;
